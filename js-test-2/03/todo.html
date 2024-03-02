@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <th id="todo">
+        <tr>
+          Todo
+        </tr>
+        <tr>
+          Progress
+        </tr>
+        <tr>
+          Upcoming task
+        </tr>
+      </th>
+      <td id="userdata">
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+      </td>
+      <button onclick="addTask()"></button>
+    </table>
+    <script>
+      function addTask() {
+        let todo = document.getElementById("todo");
+        let userdata = document.getElementById("userdata");
+        let progress = document.createElement("tr");
+        let upcomings = document.createElement("tr");
+      }
+      localStorage.getItem(JSON.stringify(progress));
+    
+    </script>
+  </body>
+</html>
