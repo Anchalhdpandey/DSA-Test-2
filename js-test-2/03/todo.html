@@ -6,34 +6,18 @@
     <title>Document</title>
   </head>
   <body>
-    <table>
-      <th id="todo">
-        <tr>
-          Todo
-        </tr>
-        <tr>
-          Progress
-        </tr>
-        <tr>
-          Upcoming task
-        </tr>
-      </th>
-      <td id="userdata">
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-      </td>
-      <button onclick="addTask()"></button>
-    </table>
-    <script>
-      function addTask() {
-        let todo = document.getElementById("todo");
-        let userdata = document.getElementById("userdata");
-        let progress = document.createElement("tr");
-        let upcomings = document.createElement("tr");
-      }
-      localStorage.getItem(JSON.stringify(progress));
-    
-    </script>
+    <form autocomplete="off" onsubmit="onFormSubmit(event)">
+      <label for="todocode"><b>TODO LIST</b></label><br>
+      <input type="text" name="todocode" id="todocode" />
+      <input type="submit" value="submit"/>
+      <input type="reset" value="reset"/>
+
+    </form>
+      <td>
+        <table class="list" id="storelist">
+        <tbody></tbody>
+      </table>
+    </td>
+    <script src="test.js"></script>
   </body>
 </html>
